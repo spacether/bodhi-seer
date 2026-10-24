@@ -1,0 +1,13 @@
+.venv/
+
+# Local SQLite data
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Common local database file
+bodhi_seer.db
+bodhi_seer.db-shm
+bodhi_seer.db-wal

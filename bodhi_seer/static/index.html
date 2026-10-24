@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bodhi Seer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="panel" id="panel" aria-label="Story explanation">
+      <header class="panel-head">
+        <a class="topics-link" href="/topics">← Back to topics</a>
+        <h1 class="brand">Bodhi Seer</h1>
+      </header>
+
+      <div class="volume" id="volume" aria-label="Articles over time"></div>
+
+      <div class="sections" id="sections">
+        <!-- overview + phase cards are rendered here -->
+      </div>
+      <p class="keys">Scroll or use ↑ ↓ to step through phases. Esc returns to the whole story.</p>
+    </aside>
+
+    <main class="stage">
+      <div id="graph" class="graph" aria-label="3D tree of coverage"></div>
+      <div class="stage-tools">
+        <button id="side-toggle" type="button">Move panel right</button>
+        <button id="fit" type="button">Fit view</button>
+      </div>
+      <div class="legend" id="legend" aria-hidden="true"></div>
+      <section class="detail" id="detail" hidden></section>
+      <div class="empty" id="empty" hidden></div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.80.0/dist/3d-force-graph.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
